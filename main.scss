@@ -29,6 +29,9 @@ $marginMob: 4%;
         margin-left: $marginInit;
         margin-top: 15px;
     }
+    .upperSocial{
+        display: none;
+    }
     .menulist{
         float: right;
         display: block;
@@ -133,7 +136,7 @@ footer{
             }
         }
     }
-}
+
 
 //MediaQueries////MediaQueries////MediaQueries////MediaQueries////MediaQueries////MediaQueries//
 //MediaQueries////MediaQueries////MediaQueries////MediaQueries////MediaQueries////MediaQueries//
@@ -159,6 +162,19 @@ footer{
 
 @media only screen and (max-width: 710px){
     .navbar{
+        .upperSocial{
+            display: flex;
+            list-style: none;
+            float: right;
+            margin-right: 5%;
+            li{
+                margin-right: 25px;
+                font-size: 1.5em;
+                a{
+                    color: $grayPS;
+                }
+            }
+        }
         .menulist{
             display: none;
         }
@@ -238,9 +254,29 @@ footer{
             font-size: 1em;
         }
     }
+    footer{
+        .footerWrap{
+            .separator{
+                .services{
+                    margin-left: 15%;
+                }
+                .footerPart{
+                    flex-basis: 100%;
+                }
+                .socialHide{
+                    display: none;
+                }
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 480px){
+    .navbar{
+        .upperSocial{
+            display: none;
+        }
+    }
     .heroImg{
         height: 250px;
         .heroHeader{
@@ -251,6 +287,27 @@ footer{
             line-height: 1.4em;
             br{
                 display: block;
+            }
+        }
+    }
+    footer{
+        .footerWrap{
+            .separator{
+                flex-direction: column;
+                .services{
+                    margin-left: 0;
+                }
+                .socialHide{
+                    display: block;
+                    text-align: right;
+                    .socialUl{
+                        float: right;
+                        li{
+                            margin-left: 25px;
+                            margin-right: 0;
+                        }
+                    }
+                }
             }
         }
     }

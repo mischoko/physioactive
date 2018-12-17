@@ -1,0 +1,257 @@
+//Global settings
+html body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+*{
+    font-family: 'Mukta', Helvetica, sans-serif;
+}
+
+//Color variables
+$bluePS: #85a6c7;
+$grayPS: #424143;
+$marginInit: 16%;
+$marginMob: 4%;
+
+//Navbar
+.navbar{
+    background: white;
+    height: 70px;
+    .PSlogo{
+        background: url('physioactive_logo.svg');
+        background-size: cover;
+        background-position: center;
+        width: 192px;
+        height: 45px;
+        float: left;
+        margin-left: $marginInit;
+        margin-top: 15px;
+    }
+    .menulist{
+        float: right;
+        display: block;
+        margin-right: $marginInit;
+        ul{
+            list-style: none;
+            display: flex;
+            li{
+                padding-left: 35px;
+                padding-top: 6px;
+                a{
+                    text-decoration: none;
+                    color: $grayPS;
+                    transition-duration: .2s;
+                    &:hover{
+                        color: $bluePS;
+                    }
+                }
+            }
+        }
+    }
+    .menuBtn, .menuMob{
+        display: none;
+    }
+}
+.heroImg{
+    background: url('imgs/hero_img.jpg')no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .icon{
+        background: url('imgs/icon.svg')no-repeat;
+        width: 130px;
+        height: 137px;
+    }
+    .heroHeader{
+        color: white;
+        margin-top: 10px;
+        margin-bottom: 0px;
+        font-size: 2.4em;
+    }
+    .heroSubheader{
+        color: white;
+        margin-top: 0px;
+        font-size: 1.3em;
+        font-weight: 400;
+        br{
+            display: none;
+        }
+    }
+
+}
+
+//footer
+footer{
+    background: $bluePS;
+    width: 100%;
+    .footerWrap{
+        margin-left: $marginInit;
+        margin-right: $marginInit;
+        display: flex;
+        color: white;
+        height: auto;
+        flex-direction: row;
+        .separator{
+            display: flex;
+            flex-direction: row;
+            flex-basis: 50%;
+            .rightCont{
+                text-align: right;                    
+                }
+            }
+            .footerPart{
+                flex-basis: 50%;
+                .socialUl{
+                    display: flex;
+                    flex-direction: row;
+                    li{
+                        margin-right: 25px;
+                        font-size: 1.5em;
+                    }
+                }
+                .footerHeader{
+                    margin-top: 15px;
+                    margin-bottom: 0px;
+                    font-size: 1.5em;
+                }
+                ul{
+                    list-style: none;
+                    padding: 0;
+                    margin-top: 0px;
+                    a{
+                        text-decoration: none;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//MediaQueries////MediaQueries////MediaQueries////MediaQueries////MediaQueries////MediaQueries//
+//MediaQueries////MediaQueries////MediaQueries////MediaQueries////MediaQueries////MediaQueries//
+//MediaQueries////MediaQueries////MediaQueries////MediaQueries////MediaQueries////MediaQueries//
+
+@media only screen and (max-width: 1335px){
+    .navbar{
+        .PSlogo{
+            margin-left: $marginMob;
+        }
+        .menulist{
+            margin-right: $marginMob;
+        }
+    }
+    footer{
+        background: $bluePS;
+        .footerWrap{
+            margin-left: $marginMob;
+            margin-right: $marginMob;
+        }
+    }
+}
+
+@media only screen and (max-width: 710px){
+    .navbar{
+        .menulist{
+            display: none;
+        }
+        .menuBtn{
+            display: block;
+            float: right;
+            margin-right: $marginMob;
+            font-size: 1.5em;
+            margin-top: 15px;
+            cursor: pointer;
+        }
+        .menuMob{
+            right: -100%;
+            display: block;
+            position: absolute;
+            margin-top: 70px;
+            transition: 0.5s;
+            ul{
+                margin: 0;
+                padding-left: 0;
+                list-style: none;
+                li{
+                    padding-top: 15px;
+                    &:last-of-type{
+                        padding-bottom: 15px;
+                    }
+                    a{
+                        text-decoration: none;
+                        color: $grayPS;
+                        font-size: 1rem !important;
+                    }
+                }
+            }
+        }
+        .menuMobActive{
+            position: absolute;
+            width: 100%;
+            text-align: center;
+            background: white;
+            margin-top: 70px;
+            display: block;
+            right: 0px;
+            position: fixed;
+            transition-duration: .3s;
+            ul{
+                margin: 0;
+                padding-left: 0;
+                list-style: none;
+                li{
+                    padding-top: 15px;
+                    &:last-of-type{
+                        padding-bottom: 15px;
+                    }
+                    a{
+                        text-decoration: none;
+                        color: $grayPS;
+                        font-size: 1rem !important;
+                        transition-duration: .2s;
+                    &:hover{
+                        color: $bluePS;
+                    }
+                    }
+                }
+            }
+        }
+    }
+    .heroImg{
+        height: 350px;
+        .icon{
+            width: 70px;
+            height: 77px;
+        }
+        .heroHeader{
+            font-size: 1.4em;
+        }
+        .heroSubheader{
+            font-size: 1em;
+        }
+    }
+}
+
+@media only screen and (max-width: 480px){
+    .heroImg{
+        height: 250px;
+        .heroHeader{
+            margin-bottom: 5px;
+        }
+        .heroSubheader{
+            text-align: center;
+            line-height: 1.4em;
+            br{
+                display: block;
+            }
+        }
+    }
+}

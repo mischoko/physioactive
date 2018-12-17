@@ -1,0 +1,297 @@
+html body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  font-family: 'Mukta', Helvetica, sans-serif;
+}
+
+.navbar {
+  background: white;
+  height: 70px;
+}
+
+.navbar .PSlogo {
+  background: url("physioactive_logo.svg");
+  background-size: cover;
+  background-position: center;
+  width: 192px;
+  height: 45px;
+  float: left;
+  margin-left: 16%;
+  margin-top: 15px;
+}
+
+.navbar .menulist {
+  float: right;
+  display: block;
+  margin-right: 16%;
+}
+
+.navbar .menulist ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navbar .menulist ul li {
+  padding-left: 35px;
+  padding-top: 6px;
+}
+
+.navbar .menulist ul li a {
+  text-decoration: none;
+  color: #424143;
+  -webkit-transition-duration: .2s;
+          transition-duration: .2s;
+}
+
+.navbar .menulist ul li a:hover {
+  color: #85a6c7;
+}
+
+.navbar .menuBtn, .navbar .menuMob {
+  display: none;
+}
+
+.heroImg {
+  background: url("imgs/hero_img.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 800px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.heroImg .icon {
+  background: url("imgs/icon.svg") no-repeat;
+  width: 130px;
+  height: 137px;
+}
+
+.heroImg .heroHeader {
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  font-size: 2.4em;
+}
+
+.heroImg .heroSubheader {
+  color: white;
+  margin-top: 0px;
+  font-size: 1.3em;
+  font-weight: 400;
+}
+
+.heroImg .heroSubheader br {
+  display: none;
+}
+
+footer {
+  background: #85a6c7;
+  width: 100%;
+}
+
+footer .footerWrap {
+  margin-left: 16%;
+  margin-right: 16%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
+  height: auto;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+footer .footerWrap .separator {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+footer .footerWrap .separator .rightCont {
+  text-align: right;
+}
+
+footer .footerWrap .separator .rightCont .fa-phone {
+  -webkit-transform: rotate(95deg);
+          transform: rotate(95deg);
+}
+
+footer .footerWrap .separator .footerPart {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+footer .footerWrap .separator .footerPart .socialUl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+footer .footerWrap .separator .footerPart .socialUl li {
+  margin-right: 25px;
+  font-size: 1.5em;
+}
+
+footer .footerWrap .separator .footerPart .footerHeader {
+  margin-top: 15px;
+  margin-bottom: 0px;
+  font-size: 1.5em;
+}
+
+footer .footerWrap .separator .footerPart ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 0px;
+}
+
+footer .footerWrap .separator .footerPart ul a {
+  text-decoration: none;
+  color: white;
+}
+
+@media only screen and (max-width: 1335px) {
+  .navbar .PSlogo {
+    margin-left: 4%;
+  }
+  .navbar .menulist {
+    margin-right: 4%;
+  }
+  footer {
+    background: #85a6c7;
+  }
+  footer .footerWrap {
+    margin-left: 4%;
+    margin-right: 4%;
+  }
+}
+
+@media only screen and (max-width: 710px) {
+  .navbar .menulist {
+    display: none;
+  }
+  .navbar .menuBtn {
+    display: block;
+    float: right;
+    margin-right: 4%;
+    font-size: 1.5em;
+    margin-top: 15px;
+    cursor: pointer;
+  }
+  .navbar .menuMob {
+    right: -100%;
+    display: block;
+    position: absolute;
+    margin-top: 70px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  .navbar .menuMob ul {
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+  }
+  .navbar .menuMob ul li {
+    padding-top: 15px;
+  }
+  .navbar .menuMob ul li:last-of-type {
+    padding-bottom: 15px;
+  }
+  .navbar .menuMob ul li a {
+    text-decoration: none;
+    color: #424143;
+    font-size: 1rem !important;
+  }
+  .navbar .menuMobActive {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    background: white;
+    margin-top: 70px;
+    display: block;
+    right: 0px;
+    position: fixed;
+    -webkit-transition-duration: .3s;
+            transition-duration: .3s;
+  }
+  .navbar .menuMobActive ul {
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+  }
+  .navbar .menuMobActive ul li {
+    padding-top: 15px;
+  }
+  .navbar .menuMobActive ul li:last-of-type {
+    padding-bottom: 15px;
+  }
+  .navbar .menuMobActive ul li a {
+    text-decoration: none;
+    color: #424143;
+    font-size: 1rem !important;
+    -webkit-transition-duration: .2s;
+            transition-duration: .2s;
+  }
+  .navbar .menuMobActive ul li a:hover {
+    color: #85a6c7;
+  }
+  .heroImg {
+    height: 350px;
+  }
+  .heroImg .icon {
+    width: 70px;
+    height: 77px;
+  }
+  .heroImg .heroHeader {
+    font-size: 1.4em;
+  }
+  .heroImg .heroSubheader {
+    font-size: 1em;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .heroImg {
+    height: 250px;
+  }
+  .heroImg .heroHeader {
+    margin-bottom: 5px;
+  }
+  .heroImg .heroSubheader {
+    text-align: center;
+    line-height: 1.4em;
+  }
+  .heroImg .heroSubheader br {
+    display: block;
+  }
+}
+/*# sourceMappingURL=main.css.map */

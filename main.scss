@@ -220,6 +220,50 @@ $marginMob: 4%;
         }
     }
 }
+//testimonials
+.quotes{
+    width: 70px;
+    height: 70px;
+    background: url('imgs/quotes.svg')no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+}
+.tstMain{
+    width: 100%;
+    margin-bottom: 20px;
+    .tstWrap{
+        margin-left: $marginInit;
+        margin-right: $marginInit;
+        display: flex;
+        flex-direction: column;
+        .tstDouble{
+            display: flex;
+            flex-direction: row;
+            margin-top: 20px;
+            .tstUnit{
+                background: #fafafa;
+                padding: 25px 30px 20px 30px;
+                &:first-of-type{
+                    margin-right: 10px;
+                }
+                &:last-of-type{
+                    margin-left: 10px;
+                }
+                .tstHeader{
+                    font-size: 1em;
+                    margin: 0;
+                }
+                .tstSubheader{
+                    color: $bluePS;
+                    margin: 0;   
+                }
+                .tstText{
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
 //footer
 footer{
     background: $bluePS;
@@ -314,6 +358,12 @@ footer{
     }
     .servicesBg{
         .servicesWrap{
+            margin-left: $marginMob;
+            margin-right: $marginMob;
+        }
+    }
+    .tstMain{
+        .tstWrap{
             margin-left: $marginMob;
             margin-right: $marginMob;
         }
@@ -487,6 +537,24 @@ footer{
             }
         }
     }
+    .tstMain{
+        .tstWrap{
+            margin-left: 0;
+            margin-right: 0;
+            margin-bottom: 15px;
+            .tstDouble{
+                flex-direction: column;
+                margin-top: 0;
+                .tstUnit{
+                    padding-left: $marginMob;
+                    padding-right: $marginMob;
+                    margin-left: 0 !important;
+                    margin-right: 0 !important;
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
     footer{
         .footerWrap{
             .separator{
@@ -512,11 +580,19 @@ footer{
     }
     .servicesBg{
         .servicesWrap{
+            margin-left: 0;
+            margin-right: 0;
             .servicesFlex{
                 flex-direction: column;
                 .servWrapCont{
+                    padding-left: $marginMob !important;
+                    padding-right: $marginMob !important;
                     padding-left: 0;
                     padding-top: 15px;
+                    margin-bottom: 5px;
+                    a{
+                        margin: 0 auto;
+                    }
                 }
             }
         }
@@ -559,11 +635,13 @@ footer{
             }
         }
     }
+    //video
     .vidWrap{
         .video{
             height: 240px;
         }
     }
+    //footer
     footer{
         .footerWrap{
             .separator{

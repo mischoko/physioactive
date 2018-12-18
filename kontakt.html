@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Physioactive - Diagnosticko rehabilitačné centrum fyzioterapie</title>
+    <link rel="stylesheet" type="text/css" href="kontakt.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Mukta:400,600" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="https://www.physioactive.sk/"><div class="PSlogo"></div></a>
+        <div class="menulist">
+            <ul>
+                <li><a href="https://www.physioactive.sk/">Domov</a></li>
+                <li><a href="sluzby">Služby</a></li>
+                <li><a href="cennik">Cenník</a></li>
+                <li><a href="galeria">Galéria</a></li>
+                <li><a href="kontakt">Kontakt</a></li>
+            </ul>
+        </div>
+        <div class="menuBtn"><i class="fas fa-bars"></i></div>
+        <ul class="upperSocial">
+            <li><a href="https://www.facebook.com/PhysioActive-455984561449445/" target="_blank"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+            <div class="menuMob">
+                <ul>
+                    <li><a href="https://www.physioactive.sk/">Domov</a></li>
+                    <li><a href="sluzby">Služby</a></li>
+                    <li><a href="cennik">Cenník</a></li>
+                    <li><a href="galeria">Galéria</a></li>
+                    <li><a href="kontakt">Kontakt</a></li>
+                </ul>
+            </div>
+    </nav>
+    <main>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4137.41334655009!2d19.29792181325662!3d49.21344299213003!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x729405f7cd46dd7a!2sPhysioactive+-+Fyzioterapeutick%C3%A9+centrum!5e0!3m2!1sen!2ssk!4v1545141328486" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <div class="mainWrap">
+            <div class="ctUnit">
+                <h1>Napíšte nám</h1>
+                <form action="php.php" method="POST">
+                    <input type="text" name="subject" placeholder="Predmet" required>
+                    <input type="text" name="mail" placeholder="@" required>
+                    <textarea type="text" name="msg" placeholder="Text správy" required></textarea>
+                    <input name="gdpr" type="checkbox" required>
+                    <label for="gdpr">Súhlasím so spracovaním osobných údajov.</label>
+                    <button class="ctaSubmit">Odoslať</button>
+                </form>
+            </div>
+            <div class="ctUnit"><p>blaaa</p></div>
+            <div class="ctUnit"><p>blaaa</p></div>
+        </div>
+    </main>
+    <footer>
+        <div class="footerWrap">
+            <div class="separator">
+                <div class="footerPart">
+                    <h1 class="footerHeader">Navigácia</h1>
+                    <ul>
+                        <li><a href="https://www.physioactive.sk/">Domov</a></li>
+                        <li><a href="cennik">Cenník</a></li>
+                        <li><a href="galeria">Galéria</a></li>
+                        <li><a href="kontakt">Kontakt</a></li>
+                    </ul>
+                </div>
+                <div class="footerPart services">
+                    <h1 class="footerHeader">Služby</h1>
+                    <ul>
+                        <li><a href="https://www.physioactive.sk/">Fyzioterapia</a></li>
+                        <li><a href="cennik">Estetika</a></li>
+                        <li><a href="galeria">Masáže</a></li>
+                        <li><a href="kontakt">Rázová vlna</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="separator">
+                <div class="footerPart socialHide">
+                    <h1 class="footerHeader">Sociálne siete</h1>
+                    <ul class="socialUl">
+                        <li><a href="https://www.facebook.com/PhysioActive-455984561449445/" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+                <div class="footerPart rightCont">
+                    <h1 class="footerHeader">Kontakty</h1>
+                    <ul>
+                        <li>+421 919 138 142</li>
+                        <li>physioactivedk@gmail.com</li>
+                        <li>Nemocničná 12</li>
+                        <li>Dolný Kubín, 026 01</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
+<script>
+    //mobile menu btn functionality
+    $('.menuBtn').click(function(){
+        $('.menuMob').toggleClass('menuMobActive');
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+@import 'main';
+
+//Variables
+$bluePS: #85a6c7;
+$grayPS: #424143;
+$marginInit: 16%;
+$marginMob: 4%;
+
+main{
+    padding-top: 70px;
+}
+
+.mainWrap{
+    width: 100%;
+    margin-left: $marginInit;
+    margin-right: $marginInit;
+    display: flex;
+    .ctUnit{
+        display: flex;
+        flex-direction: column;
+        flex-basis: 30%;
+        form{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}

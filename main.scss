@@ -9,7 +9,7 @@ html body{
     font-family: 'Mukta', Helvetica, sans-serif;
 }
 
-//Color variables
+//Variables
 $bluePS: #85a6c7;
 $grayPS: #424143;
 $marginInit: 16%;
@@ -241,7 +241,8 @@ $marginMob: 4%;
             flex-direction: row;
             margin-top: 20px;
             .tstUnit{
-                background: #fafafa;
+                background: white;
+                box-shadow: rgba($color: #000000, $alpha: .1) 1px 1px 4px;
                 padding: 25px 30px 20px 30px;
                 &:first-of-type{
                     margin-right: 10px;
@@ -539,8 +540,6 @@ footer{
     }
     .tstMain{
         .tstWrap{
-            margin-left: 0;
-            margin-right: 0;
             margin-bottom: 15px;
             .tstDouble{
                 flex-direction: column;

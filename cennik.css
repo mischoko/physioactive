@@ -894,6 +894,13 @@ main {
   position: absolute;
   right: 0%;
   font-size: 1.5em;
+  -webkit-transition-duration: .2s;
+          transition-duration: .2s;
+}
+
+.popupMain .popupBody i:hover {
+  color: #cfcfcf;
+  cursor: pointer;
 }
 
 .popupMain .popupWrap {
@@ -951,7 +958,7 @@ main {
 
 .popupMain .popupWrap form button:hover {
   cursor: pointer;
-  opacity: .85;
+  background: #a2bdd8;
 }
 
 @media only screen and (max-width: 1335px) {

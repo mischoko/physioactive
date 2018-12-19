@@ -282,7 +282,7 @@ html body {
 }
 
 .servicesBg .servicesWrap .servicesFlex .servWrapCont .servicesBtn:hover {
-  opacity: .85;
+  background: #a2bdd8;
 }
 
 .quotes {

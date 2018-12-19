@@ -122,6 +122,11 @@ main{
             position: absolute;
             right: 0%;
             font-size: 1.5em;
+            transition-duration: .2s;
+            &:hover{
+                color: #cfcfcf;
+                cursor: pointer;
+            }
         }
     }
     .popupWrap{
@@ -163,7 +168,7 @@ main{
                 margin-bottom: 25px;
                 &:hover{
                     cursor: pointer;
-                    opacity: .85;
+                    background: #a2bdd8;
                 }
             }
         }

@@ -201,6 +201,23 @@
                         poukaz nás môžete kontaktovať telefonicky alebo emailom.</p>
                 <div class="buttonInfo"><a href="#" class="servicesBtn">Chcem viac</a></div>
     </main>
+    <!-- POPUP -->
+    <div class="popupMain">
+        <div class="popupBody">
+            <i class="far fa-times-circle"></i>
+            <div class="popupWrap">
+                <h1>Napíšte nám</h1>
+                <form action="php.php" method="POST">
+                    <input type="text" name="subject" placeholder="Predmet" required>
+                    <input type="text" name="mail" placeholder="@" required>
+                    <textarea type="text" name="msg" placeholder="Text správy" required></textarea>
+                    <wrapper><input class="gdpr" name="gdpr" type="checkbox" required>
+                    <label for="gdpr">Súhlasím so spracovaním osobných údajov.</label></wrapper>
+                    <button class="ctaSubmit">Odoslať</button>
+                </form>
+            </div>
+        </div>
+    </div>
     <!-- FOOTER -->
     <footer>
         <div class="footerWrap">
@@ -251,6 +268,8 @@
     $('.menuBtn').click(function(){
         $('.menuMob').toggleClass('menuMobActive');
     });
+    //popup fucntionality
+    $('.')
 </script>
 </body>
 </html>

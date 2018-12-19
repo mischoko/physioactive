@@ -770,185 +770,140 @@ main {
   padding-top: 70px;
 }
 
-.mainWrap {
+.tabWrap {
   margin-left: 16%;
   margin-right: 16%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  margin-top: 10px;
 }
 
-.mainWrap .aFlex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: 100px;
-  -ms-flex-preferred-size: 66%;
-      flex-basis: 66%;
+.tabWrap table {
+  width: 100%;
 }
 
-.mainWrap .aFlex .ctUnit {
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
+.tabWrap table thead tr th {
+  background: #85a6c7;
+  color: white;
 }
 
-.mainWrap .aFlex .ctUnit:nth-of-type(2) {
-  margin-left: 43px;
+.tabWrap table thead tr th:last-of-type {
+  text-align: center;
 }
 
-.mainWrap .ctUnit {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-preferred-size: 33%;
-      flex-basis: 33%;
+.tabWrap table tbody td {
+  border-top: solid 1px #efefef;
+  padding-top: 9px;
+  padding-bottom: 5px;
 }
 
-.mainWrap .ctUnit h1 {
-  color: #85a6c7;
-  margin-bottom: 15px;
+.tabWrap table tbody td:nth-of-type(2) {
+  text-align: center;
+  width: 15%;
 }
 
-.mainWrap .ctUnit p {
+.tabWrap table tbody td:nth-of-type(3) {
+  width: 15%;
+}
+
+.tabWrap table tbody td:nth-of-type(3) p {
   margin: 0;
+  padding-right: 40%;
+  text-align: right;
 }
 
-.mainWrap .ctUnit p span {
-  display: none;
+.tabWrap table tbody .noBorder {
+  border: none;
 }
 
-.mainWrap .ctUnit p i {
-  color: #85a6c7;
+.infoStar {
+  width: 100%;
 }
 
-.mainWrap .ctUnit p .fa-phone {
-  -webkit-transform: rotate(100deg);
-          transform: rotate(100deg);
+.infoStar .starWrap {
+  margin-left: 16%;
+  margin-right: 16%;
+  background: #85a6c7;
 }
 
-.mainWrap .ctUnit p .fa-map-marker-alt {
-  padding-left: 2px;
+.infoStar .starWrap p {
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
 }
 
-.mainWrap .ctUnit form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin-top: 8px;
-}
-
-.mainWrap .ctUnit form input, .mainWrap .ctUnit form textarea {
-  border: solid #bababa 1px;
-  margin-bottom: 15px;
-  padding: 5px 10px;
-  font-size: .9em;
+.sepHr {
+  display: block;
+  margin-left: 16%;
+  margin-right: 16%;
+  height: 1px;
   opacity: .6;
-  resize: none;
+  background: #bababa;
+  margin-top: 40px;
 }
 
-.mainWrap .ctUnit form .gdpr {
-  margin-bottom: 0;
+.extra {
+  text-align: center;
+  margin-left: 16%;
+  margin-right: 16%;
+  margin-top: 35px;
 }
 
-.mainWrap .ctUnit form label {
-  font-size: .9em;
+.buttonInfo {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 35px;
 }
 
-.mainWrap .ctUnit form button {
+.buttonInfo .servicesBtn {
   background: #85a6c7;
   color: white;
   text-align: center;
   width: 100px;
-  font-size: 1em;
-  padding: 5px 10px 5px 10px;
+  padding: 5px 20px 5px 20px;
   -webkit-transition-duration: .2s;
           transition-duration: .2s;
   text-decoration: none;
-  margin: 15px auto;
 }
 
-.mainWrap .ctUnit form button:hover {
-  cursor: pointer;
+.buttonInfo .servicesBtn:hover {
   opacity: .85;
 }
 
 @media only screen and (max-width: 1335px) {
-  .mainWrap {
+  .tabWrap, .extra, .sepHr {
     margin-left: 4%;
     margin-right: 4%;
   }
-  .mainWrap .aFlex {
-    margin-left: 63px;
+  .infoStar .starWrap {
+    margin-left: 4%;
+    margin-right: 4%;
   }
 }
 
-@media only screen and (max-width: 980px) {
-  .mainWrap .ctUnit:nth-child(2) {
-    margin-left: 50px;
+@media only screen and (max-width: 710px) {
+  .tabWrap table tbody td {
+    font-size: .9em;
+    line-height: 1.5em;
   }
-  .mainWrap .ctUnit h1 {
-    font-size: 1.6em;
+  .tabWrap table tbody td:nth-of-type(2) {
+    width: 20%;
   }
-  .mainWrap .ctUnit p span {
-    display: inline;
-  }
-}
-
-@media only screen and (max-width: 820px) {
-  .mainWrap {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .mainWrap .aFlex {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    margin-left: 0;
-    margin-bottom: 40px;
-  }
-  .mainWrap .ctUnit {
-    margin-left: 0 !important;
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
-  }
-  .mainWrap .ctUnit h1 {
-    margin-bottom: 0px;
-  }
-  .mainWrap .ctUnit p span {
-    display: none;
+  .tabWrap table tbody td:nth-of-type(3) {
+    width: 20%;
   }
 }
 
-@media only screen and (max-width: 570px) {
-  .mainWrap .ctUnit p span {
-    display: inline;
+@media only screen and (max-width: 480px) {
+  .tabWrap table tbody td:nth-of-type(1) {
+    padding-right: 10px;
+  }
+  .tabWrap table tbody td:nth-of-type(2) {
+    width: 25%;
+  }
+  .tabWrap table tbody td:nth-of-type(3) {
+    width: 25%;
+  }
+  .tabWrap table tbody td:nth-of-type(3) p {
+    padding-right: 30%;
   }
 }
-
-@media only screen and (max-width: 520px) {
-  .mainWrap .aFlex {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin-bottom: 20px;
-  }
-  .mainWrap .aFlex .ctUnit .time {
-    margin-top: 5px;
-  }
-}
-/*# sourceMappingURL=kontakt.css.map */
+/*# sourceMappingURL=cennik.css.map */

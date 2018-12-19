@@ -140,3 +140,29 @@ main{
         }
     }
 }
+
+@media only screen and (max-width: 570px){
+    .mainWrap{
+        .ctUnit{
+            p{
+                span{
+                    display: inline;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 520px){
+    .mainWrap{
+        .aFlex{
+            flex-direction: column;
+            margin-bottom: 20px;
+            .ctUnit{
+                .time{
+                    margin-top: 5px;
+                }
+            }
+        }
+    }
+}

@@ -11,17 +11,132 @@ main{
 }
 
 .mainWrap{
-    width: 100%;
     margin-left: $marginInit;
     margin-right: $marginInit;
     display: flex;
+    .aFlex{
+        display: flex;
+        margin-left: 100px;
+        flex-basis: 66%;
+        .ctUnit{
+            flex-basis: 50%;
+            &:nth-of-type(2){
+                margin-left: 43px;
+            }
+        }
+    }
     .ctUnit{
         display: flex;
         flex-direction: column;
-        flex-basis: 30%;
+        flex-basis: 33%;
+        h1{
+            color: $bluePS;
+            margin-bottom: 15px;
+        }
+        p{
+            span{
+                display: none;
+            }
+            margin: 0;
+            i{
+                color: $bluePS;
+            }
+            .fa-phone{
+                transform: rotate(100deg);
+            }
+            .fa-map-marker-alt{
+                padding-left: 2px;
+            }
+        }
         form{
             display: flex;
             flex-direction: column;
+            margin-top: 8px;
+            input, textarea{
+                border: solid #bababa 1px;
+                margin-bottom: 15px;
+                padding: 5px 10px;
+                font-size: .9em;
+                opacity: .6;
+                resize: none;
+            }
+            .gdpr{
+                margin-bottom: 0;
+            }
+            label{
+                font-size: .9em;
+            }
+            button{
+                background: $bluePS;
+                color: white;
+                text-align: center;
+                width: 100px;
+                font-size: 1em;
+                padding: 5px 10px 5px 10px;
+                transition-duration: .2s;
+                text-decoration: none;
+                margin: 15px auto;
+                &:hover{
+                    cursor: pointer;
+                    opacity: .85;
+                }
+            }
+        }
+    }
+}
+
+//mediaQueries////mediaQueries////mediaQueries////mediaQueries////mediaQueries//
+//mediaQueries////mediaQueries////mediaQueries////mediaQueries////mediaQueries//
+//mediaQueries////mediaQueries////mediaQueries////mediaQueries////mediaQueries//
+
+@media only screen and (max-width: 1335px){
+    .mainWrap{
+        margin-left: $marginMob;
+        margin-right: $marginMob;
+        .aFlex{
+            margin-left: 63px;
+        }
+    }
+}
+
+@media only screen and (max-width: 980px){
+    .mainWrap{
+        .ctUnit{
+            &:nth-child(2){
+                margin-left: 50px;
+            }
+            h1{
+                font-size: 1.6em;
+            }
+            p{
+                span{
+                    display: inline;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 820px){
+    .mainWrap{
+        flex-direction: column;
+        .aFlex{
+            display: flex;
+            flex-direction: row;
+            margin-left: 0;
+            margin-bottom: 40px;
+        }
+        .ctUnit{
+            margin-left: 0 !important;
+            flex-basis: 100%;
+            h1{
+                margin-bottom: 0px;
+            }
+            p{
+                span{
+                    display: none;
+                }
+            }
         }
     }
 }

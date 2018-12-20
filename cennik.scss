@@ -106,8 +106,9 @@ main{
     height: 100%;
     background: rgba(0, 0, 0, .8);
     position: fixed;
-    z-index: 99;
     top: 0;
+    z-index: 99;
+    display: none;
     .popupBody{
         background: white;
         width: 90%;

@@ -10,6 +10,11 @@ main{
     padding-top: 70px;
 }
 
+.maps{
+    display: flex;
+    flex-direction: row;
+}
+
 .mainWrap{
     margin-left: $marginInit;
     margin-right: $marginInit;
@@ -22,6 +27,14 @@ main{
             flex-basis: 50%;
             &:nth-of-type(2){
                 margin-left: 43px;
+            }
+            strong{
+                color: $bluePS;
+            }
+        }
+        .ctLH{
+            p{
+                margin-top: 2px;
             }
         }
     }
@@ -118,6 +131,17 @@ main{
 }
 
 @media only screen and (max-width: 820px){
+    .maps{
+        flex-direction: column;
+        iframe{
+            width: 100%;
+            padding: 0 !important;
+            height: 250px;
+            &:nth-child(2){
+                margin-top: 10px;
+            }
+        }
+    }
     .mainWrap{
         flex-direction: column;
         .aFlex{

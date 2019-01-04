@@ -13,6 +13,7 @@ html body {
   height: 70px;
   position: fixed;
   width: 100%;
+  z-index: 9999 !important;
 }
 
 .navbar .PSlogo {
@@ -275,14 +276,14 @@ html body {
   color: white;
   text-align: center;
   width: 100px;
-  padding: 5px 10px 5px 10px;
+  padding: 5px 10px 4px 10px;
   -webkit-transition-duration: .2s;
           transition-duration: .2s;
   text-decoration: none;
 }
 
 .servicesBg .servicesWrap .servicesFlex .servWrapCont .servicesBtn:hover {
-  opacity: .85;
+  background: #a2bdd8;
 }
 
 .quotes {

@@ -13,6 +13,7 @@ html body {
   height: 70px;
   position: fixed;
   width: 100%;
+  z-index: 9999 !important;
 }
 
 .navbar .PSlogo {
@@ -275,14 +276,14 @@ html body {
   color: white;
   text-align: center;
   width: 100px;
-  padding: 5px 10px 5px 10px;
+  padding: 5px 10px 4px 10px;
   -webkit-transition-duration: .2s;
           transition-duration: .2s;
   text-decoration: none;
 }
 
 .servicesBg .servicesWrap .servicesFlex .servWrapCont .servicesBtn:hover {
-  opacity: .85;
+  background: #a2bdd8;
 }
 
 .quotes {
@@ -770,6 +771,16 @@ main {
   padding-top: 70px;
 }
 
+.maps {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
 .mainWrap {
   margin-left: 16%;
   margin-right: 16%;
@@ -794,6 +805,14 @@ main {
 
 .mainWrap .aFlex .ctUnit:nth-of-type(2) {
   margin-left: 43px;
+}
+
+.mainWrap .aFlex .ctUnit strong {
+  color: #85a6c7;
+}
+
+.mainWrap .aFlex .ctLH p {
+  margin-top: 2px;
 }
 
 .mainWrap .ctUnit {
@@ -903,6 +922,20 @@ main {
 }
 
 @media only screen and (max-width: 820px) {
+  .maps {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .maps iframe {
+    width: 100%;
+    padding: 0 !important;
+    height: 250px;
+  }
+  .maps iframe:nth-child(2) {
+    margin-top: 10px;
+  }
   .mainWrap {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

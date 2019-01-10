@@ -322,7 +322,23 @@ footer{
             }
         }
     }
-
+.copyright{
+    background: $grayPS;
+    padding: 6px 0 5px 0;
+    text-align: center;
+    p{
+        color: white;
+        margin: 0;
+        a{
+            color: white;
+            text-decoration: none;
+            transition-duration: .2s;
+            &:hover{
+                color: #ccc;;
+            }
+        }
+    }
+}
 
 //MediaQueries////MediaQueries////MediaQueries////MediaQueries////MediaQueries////MediaQueries//
 //MediaQueries////MediaQueries////MediaQueries////MediaQueries////MediaQueries////MediaQueries//

@@ -224,28 +224,28 @@ html body {
 }
 
 .servicesBg .servicesWrap .servicesFlex .servicesImg1 {
-  background: url("https://images.unsplash.com/photo-1519823551278-64ac92734fb1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80") no-repeat;
+  background: url("imgs/fyzioterapia.jpg") no-repeat;
   background-size: cover;
   background-position: center;
   height: 200px;
 }
 
 .servicesBg .servicesWrap .servicesFlex .servicesImg2 {
-  background: url("https://images.unsplash.com/photo-1533025782032-634283c7c7ad?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1352&q=80") no-repeat;
+  background: url("imgs/skincare.jpg") no-repeat;
   background-size: cover;
   background-position: center;
   height: 200px;
 }
 
 .servicesBg .servicesWrap .servicesFlex .servicesImg3 {
-  background: url("https://images.unsplash.com/photo-1519824145371-296894a0daa9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80") no-repeat;
+  background: url("imgs/masaze.jpg") no-repeat;
   background-size: cover;
   background-position: center;
   height: 200px;
 }
 
 .servicesBg .servicesWrap .servicesFlex .servicesImg4 {
-  background: url("https://images.unsplash.com/photo-1508387027939-27cccde53673?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&dpr=1&auto=format&fit=crop&w=1000&q=80&cs=tinysrgb") no-repeat;
+  background: url("imgs/razova_vlna.jpg") no-repeat;
   background-size: cover;
   background-position: center;
   height: 200px;
@@ -430,6 +430,28 @@ footer .footerWrap .footerPart ul {
 footer .footerWrap .footerPart ul a {
   text-decoration: none;
   color: white;
+}
+
+.copyright {
+  background: #424143;
+  padding: 6px 0 5px 0;
+  text-align: center;
+}
+
+.copyright p {
+  color: white;
+  margin: 0;
+}
+
+.copyright p a {
+  color: white;
+  text-decoration: none;
+  -webkit-transition-duration: .2s;
+          transition-duration: .2s;
+}
+
+.copyright p a:hover {
+  color: #ccc;
 }
 
 @media only screen and (max-width: 1335px) {

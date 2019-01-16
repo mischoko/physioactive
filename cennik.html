@@ -1,7 +1,15 @@
 <!DOCTYPE html>
 <html lang="sk">
 <head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-132439200-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+                 gtag('js', new Date());
+                 gtag('config', 'UA-132439200-1');
+    </script>
     <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Physioactive - Diagnosticko rehabilitačné centrum fyzioterapie</title>
@@ -95,6 +103,11 @@
                             <td>Masáž</td>
                             <td>30 min</td>
                             <td><p>10 €</p></td>
+                        </tr>
+                        <tr>
+                            <td>Kryoterapia</td>
+                            <td>1 ošetrenie</td>
+                            <td><p>5 €</p></td>
                         </tr>
                         <tr>
                             <td>Masáž klasická</td>
@@ -209,14 +222,21 @@
             <i class="far fa-times-circle"></i>
             <div class="popupWrap">
                 <h1>Napíšte nám</h1>
-                <form action="php.php" method="POST">
-                    <input type="text" name="subject" placeholder="Predmet" required>
-                    <input type="text" name="mail" placeholder="@" required>
-                    <textarea type="text" name="msg" placeholder="Text správy" required></textarea>
+                <form class="contact_form" action="execphp.php" method="POST">
+                    <input type="text" name="subj" class="input-subject" placeholder="Predmet" required autocomplete="off">
+                    <input type="text" name="email" class="input-email" placeholder="@" required autocomplete="off">
+                    <textarea type="text" name="message" class="input-message" placeholder="Text správy" required></textarea>
                     <wrapper><input class="gdpr" name="gdpr" type="checkbox" required>
                     <label for="gdpr">Súhlasím so spracovaním osobných údajov.</label></wrapper>
                     <button class="ctaSubmit">Odoslať</button>
                 </form>
+            </div>
+            <div class="successAlert">
+                <div class="successAlign">
+                    <h1 class="successHeader">Gratulujeme,</h1>
+                    <p class="successP">Váš mail bol úspešne odoslaný, v blízkej dobe Vás budeme kontaktovať.</p>
+                    <button class="btnOk">Ok</button>
+                </div>
             </div>
         </div>
     </div>
@@ -236,10 +256,10 @@
                 <div class="footerPart services">
                     <h1 class="footerHeader">Služby</h1>
                     <ul>
-                        <li><a href="https://www.physioactive.sk/">Fyzioterapia</a></li>
-                        <li><a href="cennik">Estetika</a></li>
-                        <li><a href="galeria">Masáže</a></li>
-                        <li><a href="kontakt">Rázová vlna</a></li>
+                        <li><a href="fyzioterapia">Fyzioterapia</a></li>
+                        <li><a href="estetika">Estetika</a></li>
+                        <li><a href="masaze">Masáže</a></li>
+                        <li><a href="razova_vlna">Rázová vlna</a></li>
                     </ul>
                 </div>
             </div>
@@ -267,7 +287,6 @@
     <div class="copyright">
         <p>&copy; 2019 Physioactive - <a href="https://www.define.sk/" target="_blank">Define Design</a></p>
     </div>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
 <script>
     //mobile menu btn functionality
     $('.menuBtn').click(function(){
@@ -278,6 +297,43 @@
         $('.popupMain').css("display","block");
     });
     $('.fa-times-circle').click(function(){
+        $('.popupMain').css("display","none");
+    });
+</script>
+<script>
+        $(".contact_form").submit(function (event) {
+            var subject = $(".input-subject").val();
+            var email = $(".input-email").val();
+            var message = $(".input-message").val();
+
+            if (email && message) {
+                $.ajax({
+                    url: "execphp.php",
+                    type: "POST",
+                    data:  "email=" + email + "&message=" + message + "&subj=" + subject,
+                    success: function () {
+                        
+                    },
+                    error: function () {
+
+                    },
+                    complete: function () {
+                        $('.popupWrap').hide();
+                        $('.successAlert').show();
+                        $('.contact_form').trigger("reset");
+                    }
+                });
+            }
+
+            event.preventDefault();
+            return false;
+        });
+</script>
+
+<script>
+    $('.btnOk').on('click', function(){
+        $('.popupWrap').show();
+        $('.successAlert').hide();
         $('.popupMain').css("display","none");
     });
 </script>

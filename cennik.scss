@@ -167,6 +167,41 @@ main{
                 transition-duration: .2s;
                 text-decoration: none;
                 margin: 15px auto;
+                border: none;
+                margin-bottom: 25px;
+                &:hover{
+                    cursor: pointer;
+                    background: #a2bdd8;
+                }
+            }
+        }
+    }
+    .successAlert{
+        display: none;
+        padding: 0px 8% 0px 8%;
+        .successAlign{
+            display: flex;
+            flex-direction: column;
+            h1{
+                color: $bluePS;
+                text-align: center;
+                margin-top: 15px;
+                margin-bottom: 10px;
+            }
+            p{
+                text-align: center;
+            }
+            button{
+                background: $bluePS;
+                color: white;
+                text-align: center;
+                width: 100px;
+                font-size: 1em;
+                padding: 5px 10px 5px 10px;
+                transition-duration: .2s;
+                text-decoration: none;
+                margin: 15px auto;
+                border: none;
                 margin-bottom: 25px;
                 &:hover{
                     cursor: pointer;
@@ -229,6 +264,20 @@ main{
                         p{
                             padding-right: 30%;
                         }
+                    }
+                }
+            }
+        }
+    }
+    //popup//
+    .popupMain{
+        .popupBody{
+            top: 60%;
+            .popupWrap{
+                padding: 0px 5% 0px 5%;
+                form{
+                    label{
+                        font-size: .8em;
                     }
                 }
             }

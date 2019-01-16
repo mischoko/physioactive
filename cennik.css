@@ -554,9 +554,9 @@ footer .footerWrap .footerPart ul a {
   .navbar .menuBtn {
     display: block;
     float: right;
-    margin-right: 4%;
+    margin-right: 5%;
     font-size: 1.5em;
-    margin-top: 15px;
+    margin-top: 17px;
     cursor: pointer;
   }
   .navbar .menuMob {
@@ -978,10 +978,57 @@ main {
           transition-duration: .2s;
   text-decoration: none;
   margin: 15px auto;
+  border: none;
   margin-bottom: 25px;
 }
 
 .popupMain .popupWrap form button:hover {
+  cursor: pointer;
+  background: #a2bdd8;
+}
+
+.popupMain .successAlert {
+  display: none;
+  padding: 0px 8% 0px 8%;
+}
+
+.popupMain .successAlert .successAlign {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.popupMain .successAlert .successAlign h1 {
+  color: #85a6c7;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.popupMain .successAlert .successAlign p {
+  text-align: center;
+}
+
+.popupMain .successAlert .successAlign button {
+  background: #85a6c7;
+  color: white;
+  text-align: center;
+  width: 100px;
+  font-size: 1em;
+  padding: 5px 10px 5px 10px;
+  -webkit-transition-duration: .2s;
+          transition-duration: .2s;
+  text-decoration: none;
+  margin: 15px auto;
+  border: none;
+  margin-bottom: 25px;
+}
+
+.popupMain .successAlert .successAlign button:hover {
   cursor: pointer;
   background: #a2bdd8;
 }
@@ -1022,6 +1069,15 @@ main {
   }
   .tabWrap table tbody td:nth-of-type(3) p {
     padding-right: 30%;
+  }
+  .popupMain .popupBody {
+    top: 60%;
+  }
+  .popupMain .popupBody .popupWrap {
+    padding: 0px 5% 0px 5%;
+  }
+  .popupMain .popupBody .popupWrap form label {
+    font-size: .8em;
   }
 }
 /*# sourceMappingURL=cennik.css.map */

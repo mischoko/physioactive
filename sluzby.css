@@ -171,6 +171,7 @@ html body {
 .vidWrap .video {
   width: 100%;
   height: 400px;
+  border: none;
 }
 
 .serHeadWrap {
@@ -554,9 +555,9 @@ footer .footerWrap .footerPart ul a {
   .navbar .menuBtn {
     display: block;
     float: right;
-    margin-right: 4%;
+    margin-right: 5%;
     font-size: 1.5em;
-    margin-top: 15px;
+    margin-top: 17px;
     cursor: pointer;
   }
   .navbar .menuMob {
@@ -835,7 +836,7 @@ main {
 }
 
 .servZoom .servZoomWrap .servZoomImg1 {
-  background: url("https://images.unsplash.com/photo-1508387104394-d13e1b497f85?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1373&q=80") no-repeat;
+  background: url("imgs/masaze.jpg") no-repeat;
   background-size: cover;
   background-position: center;
   -ms-flex-preferred-size: 40%;
@@ -843,7 +844,7 @@ main {
 }
 
 .servZoom .servZoomWrap .servZoomImg2 {
-  background: url("https://images.unsplash.com/photo-1508387150737-7ce104ed3b0a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&dpr=1&auto=format&fit=crop&w=1000&q=80&cs=tinysrgb") no-repeat;
+  background: url("imgs/tehotna.jpg") no-repeat;
   background-size: cover;
   background-position: center;
   -ms-flex-preferred-size: 40%;
@@ -928,6 +929,12 @@ main {
         flex-basis: 100%;
     padding-left: 5%;
     font-size: 14px;
+  }
+  .servZoom .servZoomWrap .servZoomTxt h1 {
+    font-size: 1.3em;
+  }
+  .serHeadWrap .serHead {
+    font-size: 1.2em;
   }
 }
 /*# sourceMappingURL=sluzby.css.map */

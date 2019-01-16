@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="sk">
 <head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-132439200-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+                 gtag('js', new Date());
+                 gtag('config', 'UA-132439200-1');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -40,7 +47,8 @@
             </div>
     </nav>
     <main>
-            <div class="row"> 
+            <div class="row">
+                <wrapper>
                     <div class="column">
                       <img class="img_sel" src="imgs/physioactiveDK9.jpg"
                             alt="physioactive-dolný-kubín"
@@ -67,39 +75,41 @@
                            data-source="https://physioactive.sk/imgs/physioactiveDK5.jpg"
                            data-width="600"
                            data-height="400"
-                           data-index="1">
+                           data-index="4">
                       <img class="img_sel" src="imgs/physioactiveDK6.jpg"
                             alt="physioactive-dolný-kubín"
                            data-source="https://physioactive.sk/imgs/physioactiveDK6.jpg"
                            data-width="600"
                            data-height="400"
-                           data-index="2">
+                           data-index="5">
                       <img class="img_sel" src="imgs/physioactiveDK7.jpg"
                             alt="physioactive-dolný-kubín"
                            data-source="https://physioactive.sk/imgs/physioactiveDK7.jpg"
                            data-width="600"
                            data-height="400"
-                           data-index="3">
+                           data-index="6">
                     </div>
+                </wrapper>
+                <wrapper>
                     <div class="column">
                       <img class="img_sel" src="imgs/physioactiveDK8.jpg"
                             alt="physioactive-dolný-kubín"
                            data-source="https://physioactive.sk/imgs/physioactiveDK8.jpg"
                            data-width="600"
                            data-height="400"
-                           data-index="1">
+                           data-index="7">
                       <img class="img_sel" src="imgs/physioactiveDK2.jpg"
                             alt="physioactive-dolný-kubín"
                            data-source="https://physioactive.sk/imgs/physioactiveDK2.jpg"
                            data-width="600"
                            data-height="400"
-                           data-index="2">
+                           data-index="8">
                       <img class="img_sel" src="imgs/physioactiveDK10.jpg"
                             alt="physioactive-dolný-kubín"
                            data-source="https://physioactive.sk/imgs/physioactiveDK10.jpg"
                            data-width="600"
                            data-height="400"
-                           data-index="3">
+                           data-index="9">
                     </div>
                     <div class="column">
                       <img class="img_sel" src="imgs/physioactiveNO1.jpg"
@@ -107,20 +117,21 @@
                            data-source="https://physioactive.sk/imgs/physioactiveNO1.jpg"
                            data-width="600"
                            data-height="400"
-                           data-index="1">
+                           data-index="10">
                       <img class="img_sel" src="imgs/physioactiveNO2.jpg"
                             alt="physioactive-dolný-kubín"
                            data-source="https://physioactive.sk/imgs/physioactiveNO2.jpg"
                            data-width="600"
                            data-height="400"
-                           data-index="2">
+                           data-index="11">
                       <img class="img_sel" src="imgs/physioactiveNO3.jpg"
                             alt="physioactive-dolný-kubín"
                            data-source="https://physioactive.sk/imgs/physioactiveNO3.jpg"
                            data-width="600"
                            data-height="400"
-                           data-index="3">
+                           data-index="12">
                     </div>
+                </wrapper>
             <div class="modal_bg"></div>
             <div class="modal_bg_preview"></div>
             </div>
@@ -140,10 +151,10 @@
                 <div class="footerPart services">
                     <h1 class="footerHeader">Služby</h1>
                     <ul>
-                        <li><a href="https://www.physioactive.sk/">Fyzioterapia</a></li>
-                        <li><a href="cennik">Estetika</a></li>
-                        <li><a href="galeria">Masáže</a></li>
-                        <li><a href="kontakt">Rázová vlna</a></li>
+                        <li><a href="fyzioterapia">Fyzioterapia</a></li>
+                        <li><a href="estetika">Estetika</a></li>
+                        <li><a href="masaze">Masáže</a></li>
+                        <li><a href="razova_vlna">Rázová vlna</a></li>
                     </ul>
                 </div>
             </div>
@@ -171,57 +182,55 @@
     <div class="copyright">
         <p>&copy; 2019 Physioactive - <a href="https://www.define.sk/" target="_blank">Define Design</a></p>
     </div>
-    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="pswp__bg"></div>
-            <div class="pswp__scroll-wrap">
-                <div class="pswp__container"><div class="pswp__item"></div><div class="pswp__item"></div><div class="pswp__item"></div></div>
-                <div class="pswp__ui pswp__ui--hidden">
-                    <div class="pswp__top-bar">
-                        <div class="pswp__counter"></div>
-                        <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-                        <button class="pswp__button pswp__button--share" title="Share"></button>
-                        <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-                        <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-                        <div class="pswp__preloader"><div class="pswp__preloader__icn"><div class="pswp__preloader__cut"><div class="pswp__preloader__donut"></div></div></div></div>
-                    </div>
-                    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap"><div class="pswp__share-tooltip"></div></div>
-                    <div class="pswp__caption"><div class="pswp__caption__center"></div></div>
-                </div>
-            </div>
-            
-        </div>
-<link rel="stylesheet" href="photoswipe/photoswipe.css">
-<link rel="stylesheet" href="photoswipe/default-skin/default-skin.css">
-<script src="photoswipe/photoswipe.min.js"></script>
-<script src="photoswipe/photoswipe-ui-default.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
+<!-- Start PhotoSwipe -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="pswp__bg"></div>
+        <div class="pswp__scroll-wrap">
+            <div class="pswp__container"><div class="pswp__item"></div><div class="pswp__item"></div><div class="pswp__item"></div></div>
+            <div class="pswp__ui pswp__ui--hidden">
+                <div class="pswp__top-bar">
+                    <div class="pswp__counter"></div>
+                    <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                    <button class="pswp__button pswp__button--share" title="Share"></button>
+                    <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                    <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                    <div class="pswp__preloader"><div class="pswp__preloader__icn"><div class="pswp__preloader__cut"><div class="pswp__preloader__donut"></div></div></div></div>
+                </div>
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap"><div class="pswp__share-tooltip"></div></div>
+                <div class="pswp__caption"><div class="pswp__caption__center"></div></div>
+            </div>
+        </div>
+    </div>
+    <link rel="stylesheet" href="photoswipe/photoswipe.css">
+    <link rel="stylesheet" href="photoswipe/default-skin/default-skin.css">
+    <script src="photoswipe/photoswipe.min.js"></script>
+    <script src="photoswipe/photoswipe-ui-default.min.js"></script>
+    <script>
+        var container = document.getElementsByClassName('pswp')[0];
+        var images = $('.img_sel');
+        var imagesForGallery = [];
+        images.each(function () {
+            imagesForGallery.push({
+                src: $(this).data('source'),
+                w: +($(this).data('width')),
+                h: +($(this).data('height')),
+                title: $(this).data('title')
+            });
+        });
+        images.click(function () {
+            var gallery = new PhotoSwipe(container, PhotoSwipeUI_Default, imagesForGallery, {
+                index: +($(this).data('index')) - 1
+            });
+            gallery.init();
+        });
+    </script>
+    <!-- END PhotoSwipe -->
 <script>
     //mobile menu btn functionality
     $('.menuBtn').click(function(){
         $('.menuMob').toggleClass('menuMobActive');
     });
 </script>
-<!-- PHOTOSWIPE -->
-<script>
-    var container = document.getElementsByClassName('pswp')[0];
-    var images = $('.img_sel');
-    var imagesForGallery = [];
-    images.each(function () {
-        imagesForGallery.push({
-            src: $(this).data('source'),
-            w: +($(this).data('width')),
-            h: +($(this).data('height')),
-            title: $(this).data('title')
-        });
-    });
-    images.click(function () {
-        var gallery = new PhotoSwipe(container, PhotoSwipeUI_Default, imagesForGallery, {
-            index: +($(this).data('index')) - 1
-        });
-        gallery.init();
-    });
-</script>
-<!-- END PhotoSwipe -->
-
 </body>
 </html>

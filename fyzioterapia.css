@@ -171,6 +171,7 @@ html body {
 .vidWrap .video {
   width: 100%;
   height: 400px;
+  border: none;
 }
 
 .serHeadWrap {
@@ -791,10 +792,36 @@ footer .footerWrap .footerPart ul a {
 
 main {
   padding-top: 70px;
-  width: 100%;
 }
 
-.row {
+.servTab {
+  list-style: none;
+  margin-left: 16%;
+  margin-right: 16%;
+  line-height: 2.8em;
+  padding-left: 0;
+}
+
+.servTab span {
+  display: inline;
+}
+
+.servTab .extra {
+  display: none;
+}
+
+.servTab li {
+  border-top: solid 1px #efefef;
+  padding-left: 1.5%;
+}
+
+.servTab li:first-of-type {
+  border: 0;
+}
+
+.servZoom .servZoomWrap {
+  margin-left: 16%;
+  margin-right: 16%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -802,61 +829,211 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  max-width: 100%;
-  display: flex;
-  flex-direction: row;
-  padding: 1px;
-  overflow: hidden;
+  background: white;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 1px 1px 4px;
+          box-shadow: rgba(0, 0, 0, 0.1) 1px 1px 4px;
+  margin-bottom: 20px;
 }
 
-.row wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+.servZoom .servZoomWrap .servZoomImg1 {
+  background: url("imgs/masaze.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
 }
 
-.row .column {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin-left: 2px;
-  margin-right: 2px;
+.servZoom .servZoomWrap .servZoomImg2 {
+  background: url("imgs/tehotna.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
 }
 
-.row .column img {
+.servZoom .servZoomWrap .servZoomTxt {
+  padding-left: 40px;
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
+  padding-right: 20px;
+}
+
+.servZoom .servZoomWrap .servZoomTxt h1 {
+  margin-top: 10px;
+  margin-bottom: 0;
+  color: #85a6c7;
+}
+
+.servZoom .servZoomWrap .servZoomTxt ul {
+  list-style: none;
+  margin-top: 0;
+  padding-left: 0;
+  line-height: 2em;
+}
+
+.servZoom .servZoomWrap .servZoomTxt ul li span {
+  display: inline-block;
+  background: #85a6c7;
+  width: 7px;
+  height: 7px;
+  margin-bottom: 1.5px;
+  margin-right: 10px;
+}
+
+.experience {
+  margin-left: 16%;
+  margin-right: 16%;
+}
+
+.experience p {
+  margin-top: 0px;
+  margin-bottom: 25px;
+}
+
+@media only screen and (max-width: 1335px) {
+  .servZoom .servZoomWrap {
+    margin-left: 4%;
+    margin-right: 4%;
+  }
+  .servTab, .experience {
+    margin-left: 4%;
+    margin-right: 4%;
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  .servZoom .servZoomWrap .servZoomTxt h1 {
+    font-size: 1.6em;
+  }
+}
+
+@media only screen and (max-width: 710px) {
+  .servTab {
+    padding-left: 0;
+  }
+  .servTab wrapper {
+    text-transform: capitalize;
+  }
+  .servTab span {
+    display: none;
+  }
+  .servTab .extra {
+    display: block;
+    border-top: solid 1px #efefef;
+  }
+  .servZoom .servZoomWrap .servZoomImg1, .servZoom .servZoomWrap .servZoomImg2 {
+    display: none;
+  }
+  .servZoom .servZoomWrap .servZoomTxt {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    padding-left: 5%;
+    font-size: 14px;
+  }
+  .servZoom .servZoomWrap .servZoomTxt h1 {
+    font-size: 1.3em;
+  }
+  .serHeadWrap .serHead {
+    font-size: 1.2em;
+  }
+}
+
+.mainImg {
   width: 100%;
-  padding-top: 2px;
-  padding-bottom: 2px;
-  -webkit-transition-duration: .2s;
-          transition-duration: .2s;
+  height: 450px;
+  background: url("imgs/popup01.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 10px;
 }
 
-@media only screen and (max-width: 1100px) {
-  main .row wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+.aest {
+  width: 100%;
+  height: 450px;
+  background: url("imgs/popup02.jpg") no-repeat;
+  background-size: cover;
+  background-position: top;
+  margin-bottom: 10px;
+}
+
+.masaz {
+  width: 100%;
+  height: 450px;
+  background: url("imgs/popup03.jpg") no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  margin-bottom: 10px;
+}
+
+.vlna {
+  width: 100%;
+  height: 450px;
+  background: url("imgs/popup04.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 0;
+}
+
+ul li span {
+  display: inline-block;
+  background: #85a6c7;
+  width: 7px;
+  height: 7px;
+  margin-bottom: 1.5px;
+  margin-right: 10px;
+}
+
+.experience p {
+  margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 980px) {
+  .mainImg, .aest, .masaz {
+    height: 300px;
+  }
+  h1 {
+    font-size: 1.3em;
   }
 }
 
-@media only screen and (max-width: 600px) {
-  main .row {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+@media only screen and (max-width: 480px) {
+  .mainImg {
+    width: 100%;
+    height: 210px;
+    background: url("imgs/popup01_m.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 10px;
+  }
+  .aest {
+    width: 100%;
+    height: 210px;
+    background: url("imgs/popup02_m.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 10px;
+  }
+  .masaz {
+    width: 100%;
+    height: 210px;
+    background: url("imgs/popup03_m.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 10px;
+  }
+  .vlna {
+    width: 100%;
+    height: 210px;
+    background: url("imgs/popup04_m.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 10px;
   }
 }
-/*# sourceMappingURL=galeria.css.map */
+/*# sourceMappingURL=fyzioterapia.css.map */
